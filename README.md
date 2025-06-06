@@ -2,11 +2,11 @@
 Nombre: Luis Pizarro Avila
 Prueba tecnica GrupoBios - Calendario
 
-Clone:
+Clone::
 git clone https://github.com/LPizarroA/GrupoBios-Tecnica.git
 
-Install
+Install::
 npm install
 
-Ejecutar
+Ejecutar::
 npm run dev
