@@ -1,0 +1,19 @@
+.App__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: var(--gradient-4);
+  height: 100vh;
+}
+
+.App__container {
+  background: rgba(255, 255, 255, 0.7);
+  padding: var(--size-3);
+  border-radius: var(--size-3);
+  box-shadow: var(--shadow-4);
+}
+
+.App__title {
+  font-size: var(--font-size-3);
+  padding-bottom: var(--size-2);
+}

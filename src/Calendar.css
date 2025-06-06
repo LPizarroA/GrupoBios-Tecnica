@@ -1,0 +1,79 @@
+.Calendar__container {
+  width: clamp(var(--size-15), calc(100vw - 2 * var(--size-12)), 1200px);
+  height: clamp(var(--size-15), calc(100vh - 2 * var(--size-12)), 800px);
+  display: grid;
+  grid-template: 1fr auto / auto 1fr auto;
+  gap: var(--size-2);
+}
+
+.Calendar__main {
+  grid-column: span 3;
+  border: 1px solid var(--teal-6);
+  border-radius: var(--size-2);
+  display: flex;
+  background-color: white;
+  overflow: auto;
+}
+
+.Calendar__next_week_button {
+  grid-column: 3;
+}
+.Calendar__button{
+  transition: all 0.4s ease-in-out;
+}
+.Calendar__button:hover{
+ color: #00dcea;
+}
+.Calendar__hours{
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.Calendar__container__data {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+.Calendar__item_desc{
+  min-height: 60px;
+}
+.Calendar__container__items {
+  flex: 0 0 auto;
+}
+
+.Calendar__container__row {
+  display: flex;
+}
+
+.Calendar__container__items {
+  padding: 8px;
+  border: 1px solid #ccc;
+  width: 12.5%;
+  font-size: 12px;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+@media(width < 1200px){
+  .Calendar__container__items{
+    width: 125px;
+  }
+}
+
+.Calendar__row__sticky{
+  position: sticky;
+  top: 0;
+  max-width: 100%;
+}
+
+.Calendar__container__data {
+  overflow-x: auto;
+  display: block;
+}
+
+.Calendar__row__titles {
+  background-color: #00dcea;
+  color: #ffffff;
+  text-align: center;
+  text-transform: capitalize;
+}
